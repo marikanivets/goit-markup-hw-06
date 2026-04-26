@@ -653,9 +653,11 @@ img {
 
 @media screen and (min-width: 1158px) {
     .footer .container {
+        display: flex;
+        align-items: baseline;
         flex-wrap: nowrap;
-        padding-left: 15px;
         gap: 0;
+        padding-left: 15px;
     }
 }
 
@@ -1191,11 +1193,9 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 @media screen and (min-width: 1158px) {
-
     .features,
     .our-team-section,
-    .our-portfolio,
-    .container-portfolio {
+    .our-portfolio {
         padding-block: 120px;
     }
 }
@@ -1225,25 +1225,39 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 @media screen and (max-width: 767px) {
-    .footer-title {
-        text-align: left;
+    .footer-container {
+        align-items: center;
     }
-}
 
-.container-portfolio {
-    padding-bottom: 0 !important;
-}
-
-@media screen and (max-width: 767px) {
+    .container-footer {
+        text-align: center;
+    }
 
     .footer-title {
-        text-align: left;
+        text-align: center;
     }
 
     .footer-media,
     .footer-form {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+
+    .footer-media {
+        margin-right: 80px;
+    }
+
+    .footer-form {
+        margin-left: auto;
+    }
+
+    .footer-form-wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
     }
 }
