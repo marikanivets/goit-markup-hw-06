@@ -1164,3 +1164,38 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     justify-content: flex-start;
     gap: 40px;
 }
+
+.features,
+.our-team-section,
+.our-portfolio,
+.container-portfolio {
+    padding-block: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+
+    .features,
+    .our-team-section,
+    .our-portfolio,
+    .container-portfolio {
+        padding-block: 120px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features-listt {
+        gap: 72px 24px;
+    }
+}
+
+.title-section-text {
+    max-width: 216px;
+    margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .title-section-text {
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+}
