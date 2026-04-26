@@ -521,10 +521,10 @@ img {
 .our-portfolio {
     background-color: #ffffff;
     padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container-portfolio {
-    padding-bottom: 96px;
 }
 
 .portfolio-list {
@@ -544,9 +544,9 @@ img {
     }
 
     .portfolio-list:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 }
 
@@ -1138,6 +1138,9 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin-bottom: auto;
 }
 
@@ -1166,7 +1169,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 
 .mobile-tel {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #4d5ae5;
