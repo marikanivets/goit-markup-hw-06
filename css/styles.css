@@ -1186,8 +1186,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 
 .features,
 .our-team-section,
-.our-portfolio,
-.container-portfolio {
+.our-portfolio {
     padding-block: 96px;
 }
 
@@ -1222,5 +1221,29 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 @media screen and (min-width: 1158px) {
     .title-section-text {
         margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-title {
+        text-align: left;
+    }
+}
+
+.container-portfolio {
+    padding-bottom: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer-title {
+        text-align: left;
+    }
+
+    .footer-media,
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
